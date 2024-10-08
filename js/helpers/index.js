@@ -4,7 +4,11 @@ export function createVideoElement(url) {
 
     tempDiv.innerHTML = `<div class="video-box">
                             <video controls width="auto" src="${url}"></video>
-                         </div>`;
+                            <a class="download-button" href="${url}" download>
+                                Download
+                            </a>
+                         </div>
+                         `;
 
     return tempDiv.firstChild;
 }

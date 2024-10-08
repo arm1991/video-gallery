@@ -14,9 +14,12 @@
 
 .video-box {
   width: 100%;
-  height: 533px;
+  height: 593px;
   border-radius: 12px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
   .video-box > * {
     width: 100%;
     display: block; }
@@ -36,6 +39,21 @@
 
 .drag-video {
   display: none; }
+
+.download-button {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: greenyellow;
+  filter: brightness(90%);
+  text-decoration: none;
+  color: black;
+  transition: filter 0.3s ease-in, font-size 0.3s ease-in; }
+  .download-button:hover {
+    filter: brightness(100%);
+    font-size: 28px; }
 
 .costum-button {
   margin-top: 16px;
